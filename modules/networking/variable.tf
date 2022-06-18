@@ -28,13 +28,13 @@ variable "igw_name" {
 variable "public_az" {
   type        = list(string)
   description = "These are the availabity zones for the public subnets"
-  default     = ["ca-central-1a", "ca-central-1b"]
+  default     = ["us-east-1a", "us-east-1b"]
 }
 
 variable "private_az" {
   type        = list(string)
   description = "These are the availabity zones for the private subnets"
-  default     = ["ca-central-1a", "ca-central-1b"]
+  default     = ["us-east-1a", "us-east-1b"]
 }
 
 variable "eks_cluster_name" {

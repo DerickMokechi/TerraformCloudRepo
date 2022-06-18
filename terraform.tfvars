@@ -5,3 +5,4 @@ vpc_name = "aws_vpc_eks"
 igw_name = "eks_igw"
 
 eks_cluster_name = "eks_cluster"
+region           = "us-east-1"

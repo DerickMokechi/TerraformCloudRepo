@@ -29,3 +29,8 @@ variable "eks_cluster_name" {
 # variable "aws_pub_subnet1_id" {
 #   description = "public subnet id"
 # }
+
+variable "region" {
+  description = "Name of current region"
+
+}
