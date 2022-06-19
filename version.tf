@@ -18,11 +18,11 @@ terraform {
 
 }
 
-#  #AWS provider details
-provider "aws" {
-  profile = "default"
-  region  = "us-east-1"
-}
+#  #AWS provider details should be commented if credentials are provided in your jenkins server
+# provider "aws" {
+#   profile = "default"
+  region  = var.region
+# }
 
 data "aws_eks_cluster" "cluster" {
   name = module.eks.cluster_id
