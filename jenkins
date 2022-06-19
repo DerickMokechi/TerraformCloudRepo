@@ -1,7 +1,7 @@
 // pipeline{
 //     agent any
 //     tools {
-//         terraform 'Terraform 1.1.7'
+//         terraform 'Terraform1.1.7'
 //     }   
 //    parameters {
 //         string(name: 'environment', defaultValue: 'default', description: 'Workspace/environment file to use for deployment')
@@ -9,10 +9,10 @@
 //         booleanParam(name: 'destroy', defaultValue: false, description: 'Destroy Terraform build?')
 
 //     }
-//     // environment {
-//     //     AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
-//     //     AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-//     // }
+//     environment {
+//         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
+//         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+//     }
     
 
 //     stages {
@@ -25,9 +25,7 @@
 
 //         stage('TerraformInit'){
 //             steps {
-//                 withAWS(credentials: 'demo-jenkins credentials', profile: 'default', region: 'us-east-1', roleAccount: '179998859216') {
-//     // some block
-// }
+                
 //                     sh 'terraform init -input=false'
 //                 }
 //         }       
